@@ -1,0 +1,23 @@
+<h1>Search Results</h1>
+
+<section class='member-info'>
+  <%= @members %>
+<% binding.pry %>
+</section>
+
+
+@members.first = [
+  {:_id=>"5cf5679a915ecad153ab68fd",
+ :allies=>["Ozai"],
+ :enemies=>["Earth Kingdom"],
+ :name=>"Chan (Fire Nation admiral)",
+ :affiliation=>"Fire Nation Navy"}
+]
+
+@members.map do |member|
+  member[:_id]
+  member[:_allies]
+  member[:enemies]
+  member[:name]
+  member[:affiliation]
+end

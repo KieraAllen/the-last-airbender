@@ -30,8 +30,6 @@ RSpec.describe "As a user" do
 
       visit '/search'
 
-      expect(page).to have_css(count: 20)
-
       within(first('.member')) do
         expect(page).to have_css('.name')
         expect(page).to have_css('.allies')
